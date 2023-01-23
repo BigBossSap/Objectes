@@ -16,7 +16,7 @@ namespace Objectes
         public Cuenta(string titular)
         {
             this.titular = titular;
-            this.cantidad = 0;
+            this.cantidad = 1200;
         }
 
         public Cuenta(string titular, double cantidad)
@@ -40,10 +40,10 @@ namespace Objectes
 
         public void MostraCuenta(string titular, double cantidad)
         {
-            Console.WriteLine(titular+" "+cantidad);
+            Console.WriteLine($"{titular} tiene {cantidad}€");
         }
 
-        public void Ingresar(double  cantidad)
+        public void Ingresar(double cantidad)
         {
             if (cantidad < 0) { }
             else

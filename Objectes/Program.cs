@@ -1,12 +1,13 @@
 ﻿using System;
 
+
 namespace Objectes
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             //Exercici 1
 
             estudiante alumno = new estudiante("Sergi", -3, "41581196W");
@@ -29,12 +30,15 @@ namespace Objectes
             Cuenta cuenta = new Cuenta("Sergio");
            
             cuenta.MostraCuenta(cuenta.Titular, cuenta.Cantidad);
-            cuenta.Ingresar(100);
+            cuenta.Ingresar(1000);
             cuenta.MostraCuenta(cuenta.Titular, cuenta.Cantidad);
             cuenta.Retirar(150);
             cuenta.MostraCuenta(cuenta.Titular, cuenta.Cantidad);
 
             //Exercici 3
+
+            CuentaJoven cuentaJoven = new CuentaJoven();
+
 
         }
     }
