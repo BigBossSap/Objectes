@@ -43,7 +43,7 @@ namespace Objectes
         }
         public void Mostra()
         {
-            Console.WriteLine($"Nom: {nom}\nEdat: {edat}\nDni: {dni}\n");
+            Console.WriteLine($"Nom: {nom}\nEdat: {edat}\nDni: {dni}");
         }
 
         public bool EsMajor()
